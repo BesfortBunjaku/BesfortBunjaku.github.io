@@ -17,10 +17,10 @@ minimal_mistakes_skin: "default" # "default",  "air", "aqua", "contrast", "dark"
 # Site Settings
 root: "/"
 locale: "en-US"
-title: "Site Title"
+title: "Besfort Bunjaku"
 title_separator: "-"
 subtitle: # site tagline that appears below site title in masthead
-name: "Your Name"
+name: "Besfort Bunjaku"
 description: "An amazing website."
 url: "https://besfortbunjaku.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl: "/" # the subpath of your site, e.g. "/blog"
