@@ -268,7 +268,6 @@ compress_html:
 # Defaults
 defaults:
   # _posts
-  classes: wide
   - scope:
       path: ""
       type: posts
@@ -279,5 +278,4 @@ defaults:
       comments: # true
       share: true
       related: true
-
 #theme: jekyll-theme-cayman
