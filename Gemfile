@@ -26,6 +26,7 @@ group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
   gem "jekyll-include-cache"
   gem "github-pages"
+  gem "jekyll-admin"
   
 end
 
