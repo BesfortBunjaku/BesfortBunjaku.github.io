@@ -1,7 +1,7 @@
 ---
 title: "Git: Git Tutorial"
 header:
-  image: assets/images/unsplash-image-9.jpg
+  image: assets/images/git.png
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 tags:
   - table of contents
@@ -16,10 +16,10 @@ toc_icon: "heart"
 Git is a version control system.
 Git helps you keep track of code changes.
 
-### 1. Git Install?
+### Git Install?
 
 You can download Git for free from the following website: https://www.git-scm.com/
-To check if instalation was sucesfull,we can type the followin comant in console
+To check if instalation was sucesfull, we can type the followin comant in console
 
 
 ```console
