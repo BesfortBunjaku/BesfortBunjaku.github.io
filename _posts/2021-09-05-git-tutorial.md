@@ -14,10 +14,10 @@ The types of VCS are:
 * Local Version Control System
 * Centralized Version Control System
 * Distributed Version Control System
-#### Local Version Control System
-#### Centralized Version Control System
+## Local Version Control System
+## Centralized Version Control System
 ![Smithsonian Image]({{ site.url }}{{ site.baseurl }}/assets/images/cvcs.png)
-{: .image-right}
+{: .image-left}
 #### Distributed Version Control System
 ![Smithsonian Image]({{ site.url }}{{ site.baseurl }}/assets/images/dvcs.png)
 {: .image-right}
