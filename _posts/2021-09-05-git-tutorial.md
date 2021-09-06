@@ -9,8 +9,18 @@ toc: true
 toc_label: "Git Tutorial"
 toc_icon: "heart"
 ---
-
- 
+## Types of version controlle systems?
+The types of VCS are:
+* Local Version Control System
+* Centralized Version Control System
+* Distributed Version Control System
+#### Local Version Control System
+#### Centralized Version Control System
+![Smithsonian Image]({{ site.url }}{{ site.baseurl }}/assets/images/cvcs.png)
+{: .image-right}
+#### Distributed Version Control System
+![Smithsonian Image]({{ site.url }}{{ site.baseurl }}/assets/images/dvcs.png)
+{: .image-right}
 ## What is Git?
 
 Git is a version control system.
