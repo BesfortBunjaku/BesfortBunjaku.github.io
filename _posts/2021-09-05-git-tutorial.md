@@ -52,28 +52,30 @@ You can download Git for free, and install it in computer.To check if installati
 ```console
 git --version
 ```
-## Tell git who you are
-After we install git, we need to tell git who we are, since every Git commit will use this information to identify you as the author.There are thre different configuration levels in the Git. 
+## Git config levels
+There are thre different configuration levels in the Git. 
   * Local(default)
   * Global
   * System
+
 Git has a command called `config` which can accept arguments, those arguments are listed above.
 
-Local will apply only for that repository.
+`--local` will apply only for that repository.
 ```console
 git config --local
 ```
-Global will apply to all repositorys.
+`--global` will apply to all repositorys.
 ```console
 git config --global # foll all repos
 ```
-System will apply to all system user, for all users that are using this machine.
+`--system` will apply to all system user, for all users that are using this machine.
 ```console
 git config --system # for all system users
 ```
 ## Basic Configuration
-The following git command allowe us to make basic git configuration
+After we install git, we need to tell git who we are, since every Git commit will use this information to identify you as the author.The following git commands allow us to make basic git configuration.
 
+User name
 ```console
 git config --global user.name "Your full name"
 ```
@@ -81,7 +83,7 @@ Example:
 ```console
 git config --global user.name "Besfort Bunjaku"
 ```
-
+Email address
 ```console
 git config --global user.email "your email address"
 ```
@@ -99,6 +101,12 @@ There are four phases in the Git Workflow.
 * Remote repository (Master)
 
 ## Initialize a git repository
+
+After we create a project folder,we need to tell git to watch this folder.We can do this by using` git init`,after that git is aware of our project, and it will create a .git hiden folder inside it.
+
+```console
+git init
+```
 ## Notices
 
 **Watch out!** You can also add notices by appending `{: .notice}` to a paragraph.
