@@ -93,6 +93,15 @@ git config --global user.email "bessffort@gmail.com"
 ```
 It is worthe to know that we can make other configuration, for example: setting up color to show in git console, or editor that will open when we wont to comapre tow files...
 For now we stay with basic config.
+
+## Initialize a git repository
+
+After we create a project folder,we need to tell git to watch this folder.We can do this by using` git init`,after that git is aware of our project, and it will create a `.git` hiden folder inside it.
+
+```console
+git init
+```
+
 ## Git Workflow
 There are four phases in the Git Workflow.
 * Working directory
@@ -100,13 +109,10 @@ There are four phases in the Git Workflow.
 * Local repository (Head)
 * Remote repository (Master)
 
-## Initialize a git repository
 
-After we create a project folder,we need to tell git to watch this folder.We can do this by using` git init`,after that git is aware of our project, and it will create a .git hiden folder inside it.
+![Smithsonian Image]({{ site.url }}{{ site.baseurl }}/assets/images/git1.png)
+{: .image-right}
 
-```console
-git init
-```
 ## Notices
 
 **Watch out!** You can also add notices by appending `{: .notice}` to a paragraph.
