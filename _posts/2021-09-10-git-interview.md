@@ -41,7 +41,6 @@ Example of distributed version control systems are:
   * Monotone
 
 ## Who created Git?
-
 Git was created by Linus Torvalds in 2005 on the road to develop Linux Kernel.
 
 ## Which language is used in Git?
@@ -51,13 +50,11 @@ C language. C language makes Git fast
 The git clone command creates a copy of the existing central Git repository into your local machine.
 
 ## What is Git?
-  
 Git is a Version Control System. Version Control System is basically software designed to record changes within one or more files over time. It allows us to undo or to cancel all made or pending changes within one or more files. If we're working on a project with many files, VCS enables us to control the whole project. If necessary, this allows us to revert one or more files any of their previous versions or the whole project to a previous version. We can also compare changes to one file between two versions in order to see exactly what was changed in each file, when it was changed and who made the change. We can also see why the change was made.
 
 Why am I mentioning files instead of code? Because Git is a universal system that can be used for version control of all types of files, be it Microsoft Word files, pictures, AutoCAD files, Visual Studio Project, etc.
 
 ## How to check git Installation version?
-
 ```console
 git --version
 ```
@@ -105,7 +102,6 @@ It is worth to know that we can make other configuration, for example: setting u
 For now we stay with basic config.
 
 ## Initialize a git repository?
-
 After we create a project folder,we need to tell git to watch this folder. We can do this by using` git init`,after that git is aware of our project, and it will create a `.git` hidden folder inside it.
 
 ```console
