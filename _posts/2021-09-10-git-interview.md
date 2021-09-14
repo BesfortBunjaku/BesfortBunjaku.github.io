@@ -54,6 +54,18 @@ Git is a Version Control System. Version Control System is basically software de
 
 Why am I mentioning files instead of code? Because Git is a universal system that can be used for version control of all types of files, be it Microsoft Word files, pictures, AutoCAD files, Visual Studio Project, etc.
 
+## Mention some Git Repository Hosting Services.
+* Github
+* Gitlab
+* BitBucket
+
+## Name some Basic Operations in Git.
+* Init
+* Add
+* Commit
+* Push
+* Pull
+
 ## How to check git Installation version?
 ```console
 git --version
@@ -119,7 +131,20 @@ There are four phases in the Git Workflow.
 ![Smithsonian Image]({{ site.url }}{{ site.baseurl }}/assets/images/git1.png)
 {: .image-right}
 
-
+## What does git add command do?
+This command adds files and changes to the index or staging area.
+```console
+git add .     # add everything to staging area "." dot refers to current working directory.
+```
+```console
+git add --all     # add everything to staging area, same commend as above.
+```
+```console
+git add foo.py     # add one file to staging area.
+```
+```console
+git add foo.py,bar.py    # add list files to staging area.
+```
 ## Notices
 
 **Watch out!** You can also add notices by appending `{: .notice}` to a paragraph.
