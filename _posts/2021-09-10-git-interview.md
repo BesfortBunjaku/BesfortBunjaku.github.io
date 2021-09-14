@@ -1,5 +1,5 @@
 ---
-title: "Git: Git Tutorial"
+title: "Git: Git Q&A"
 header:
   image: assets/images/git.png
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
@@ -137,7 +137,7 @@ This command adds files and changes to the index or staging area.
 git add .     # add everything to staging area "." dot refers to current working directory.
 ```
 ```console
-git add --all     # add everything to staging area, same commend as above.
+git add --all     # add everything to staging area, same command as above.
 ```
 ```console
 git add foo.py     # add one file to staging area.
@@ -145,6 +145,16 @@ git add foo.py     # add one file to staging area.
 ```console
 git add foo.py,bar.py    # add list files to staging area.
 ```
+
+## Git commit object?
+
+![git commit]({{ site.url }}{{ site.baseurl }}/assets/images/commitobject.png)
+{: .image-left}
+
+`SHA` (Secure hash) 40 hex char that uniquely identifies a commit
+`Author` How made the commit.
+`Date` Date and time, when the commit was made.
+`Message` Commit message.
 ## Notices
 
 **Watch out!** You can also add notices by appending `{: .notice}` to a paragraph.
