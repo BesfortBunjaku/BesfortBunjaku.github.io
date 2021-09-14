@@ -143,17 +143,20 @@ git add --all     # add everything to staging area, same command as above.
 git add foo.py     # add one file to staging area.
 ```
 ```console
-git add foo.py,bar.py    # add list files to staging area.
+git add foo.py, bar.py    # add list files to staging area.
 ```
 
-## Git commit object?
+## What does the commit object contain?
 
 ![git commit]({{ site.url }}{{ site.baseurl }}/assets/images/commitobject.png)
 {: .image-left}
 
 `SHA` (Secure hash) 40 hex char that uniquely identifies a commit
+
 `Author` How made the commit.
+
 `Date` Date and time, when the commit was made.
+
 `Message` Commit message.
 ## Notices
 
