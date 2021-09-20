@@ -17,6 +17,8 @@ As per the Django documentation, there are some built-in validators:
 
   SlugField = models.CharField(validators=[validate_slug])
   EmailField = models.CharField(validators=[validate_email])
+
+  
 ```
 ## The Reusable Method?
 Writing custom validators is often the best way to have uniform validation throughout your project. So let's create our own validators using the above example.
@@ -31,6 +33,9 @@ Writing custom validators is often the best way to have uniform validation throu
       """
       if not "yourdomain.com" in value:
           raise ValidationError(_"Sorry, the email submitted is invalid. All emails have to be registered on this domain only.", status='invalid')
+
+
+
 ```
 Now we're talking. This new method validate_domainonly_email is perfect to be used anywhere on our project. It will accomplish field-level validation wherever we use it.
 The nice thing is we can reuse this validator in any field including Model fields, Form fields, and even DRF serializers.
@@ -38,12 +43,13 @@ The nice thing is we can reuse this validator in any field including Model field
 ```python
 #anotherapp.models.py 
 from django.db import models
-
 from yourapp.validators import validate_domainonly_email
 
 
 class NewProjectSubmission(models.Model):
     email = models.EmailField(validators=[validate_domainonly_email])
+
+
 ```
 Or in a Django Rest Framework serializer:
 
@@ -51,15 +57,15 @@ Or in a Django Rest Framework serializer:
 #anotherapp.serializers.py 
 
 from rest_framework import serializers
-
 from yourapp.validators import validate_domainonly_email
-
-
 
 class CommentSerializer(serializers.Serializer): # or serializers.ModelSerializer
     email = serializers.EmailField(validators=[validate_domainonly_email])
     content = serializers.CharField(max_length=200)
     created = serializers.DateTimeField()
+
+
+
 ```
 
 ## Even further... a custom Field!
