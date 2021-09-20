@@ -151,7 +151,7 @@ git add foo.py, bar.py    # add list files to staging area.
 ![git commit]({{ site.url }}{{ site.baseurl }}/assets/images/commitobject.png)
 {: .image-left}
 
-`SHA` (Secure hash) 40 hex char that uniquely identifies a commit
+`SHA` (Secure hash algorithm) 40 hex char that uniquely identifies a commit
 
 `Author` How made the commit.
 
