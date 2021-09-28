@@ -50,19 +50,43 @@ First we create a python file inside any app called `middleware.py`,this could b
 
 `Step2 :`
 
-  ![Smithsonian Image]({{ site.url }}{{ site.baseurl }}/assets/images/middlemod.png)
-{: .image-left}
-
 We create a class inside `middleware.py` module.
 Tow methods are required from django to be included inside this class:
+
+```python
+class UserInfoMiddleware:
+    def __init__(self, get_response):
+        self.get_response = get_response
+        # One-time configuration and initialization.
+
+    def __call__(self, request):
+        # Code to be executed for each request before the view (and later middleware) are called.
+        print("Hi..")
+
+        response = self.get_response(request)
+
+        # Code to be executed for each request/response after the view is called.
+
+        return response
+```
 
 * `__init__(self, get_response)`
 * `__call__(self, request)-> response`
 
 other methods are optional.
+There are five optional methods that we can include in middleware class:
+
+Those tow methods are called during request process, before getting to the view.
+
+* `process_request(self, request)`
+* `process_view(self, request, view_func, view_args, view_kwargs)`
+
 
 
 `Step3 :` 
+
 We include or register our costume middleware in django settings middleware section.
+
+
 **Watch out!** You can also add notices by appending `{: .notice}` to a paragraph.
 {: .notice}
