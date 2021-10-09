@@ -13,6 +13,7 @@ toc_icon: "heart"
 Middleware is code (usually a class) that is executed during request response circle.
 Django commes with predefined Middleware (default) list, some of them are:
 
+
   ![Smithsonian Image]({{ site.url }}{{ site.baseurl }}/assets/images/settingsmiddleware.png)
 {: .image-left}
 
