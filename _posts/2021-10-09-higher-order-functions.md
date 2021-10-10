@@ -18,13 +18,13 @@ def callback_function(x):
     y = x + 2
     return y
 
-def higher_order_function(lst , callback_function):
+def higher_order_function(callback_function , lst):
     return [callback_function(item) for item in lst]
 ```
 
 examples of higher order functions in python are:
 
-* map
+* [map](https://besfortbunjaku.github.io/django-validators/)
 * filter
 * reduce
 
