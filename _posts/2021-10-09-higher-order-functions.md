@@ -29,7 +29,7 @@ examples of higher order functions in python are:
 * reduce
 
 
-**Costume Middleware!** We can make our owen costume middleware and include in django settings middleware list. (refer to project bello)
+**Costume Middleware!** Test We can make our owen costume middleware and include in django settings middleware list. (refer to project bello)
 {: .notice}
 
 
