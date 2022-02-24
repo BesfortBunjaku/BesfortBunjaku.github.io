@@ -6,7 +6,7 @@ header:
 tags:
   - table of contents
 toc: true
-toc_label: "Git Tutorial"
+toc_label: "Docker Tutorial"
 toc_icon: "heart"
 ---
 ## What is Docker?
